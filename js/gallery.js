@@ -37,6 +37,10 @@ function swapPhoto() {
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
+	document.getElementByID('photo).src = mIMages[mCurrentIndex].img;
+	var location = document.getElementsByClassName('location')[0];
+	var description = document.getElementsByClassName('description')[0];
+	var date = document.getElementsByClassName('date')[0];
 	console.log('swap photo');
 }
 
@@ -94,4 +98,11 @@ function GalleryImage() {
 	//2. description of photo
 	//3. the date when the photo was taken
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	function GalleryImage() {
+		var location;
+		var description;
+		var date;
+		var img;
+		var temporary;
+	}
 }
